@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIRE mudou de endereço: cire.app.br</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://cire.app.br/">
+<meta http-equiv="refresh" content="0; url=https://cire.app.br/">
+<script>
+  // Leva o visitante para a página equivalente em cire.app.br.
+  (function () {
+    var mapa = {
+      "": "", "index.html": "",
+      "sobre": "sobre.html", "sobre.html": "sobre.html",
+      "equipe": "equipe.html", "equipe.html": "equipe.html",
+      "manual": "manual.html", "manual.html": "manual.html",
+      "termos": "termos.html", "termos.html": "termos.html"
+    };
+    var caminho = location.pathname.replace(/^\/+|\/+$/g, "").toLowerCase();
+    var destino = Object.prototype.hasOwnProperty.call(mapa, caminho) ? mapa[caminho] : "";
+    location.replace("https://cire.app.br/" + destino);
+  })();
+</script>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; display: grid; place-items: center; min-height: 100vh; margin: 0; background: #f4f7fb; color: #222; text-align: center; padding: 24px; box-sizing: border-box; }
+  a { color: #0056b3; font-weight: 700; }
+</style>
+</head>
+<body>
+  <p>A CIRE agora está em <a href="https://cire.app.br/">cire.app.br</a>.<br>Se você não for redirecionado automaticamente, clique no link.</p>
+</body>
+</html>
